@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORIGIN Monsanto — Gathering at São Pedro de Vira-a-Corça · October 17, 2026</title>
+<meta name="description" content="Join the ORIGIN global moment at the 13th-century hermitage of São Pedro de Vira-a-Corça, at the foot of Monsanto — Mons Sanctus, the sacred mountain of Portugal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;1,400&family=Barlow+Condensed:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1a1208;
+  --gold:#e8a030;
+  --gold-soft:#c9a84c;
+  --granite:#8a8378;
+  --parchment:#f5f0e6;
+  --sky:#a8c4d8;
+  --body-text:#c8d0d8;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:#fff;
+  font-family:'Barlow',sans-serif;
+  line-height:1.7;
+}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.5rem}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;
+  min-height:88vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  padding:5rem 1.5rem 4rem;
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(232,160,48,.14) 0%, transparent 55%),
+    linear-gradient(180deg,#241a0c 0%,#1a1208 70%);
+  overflow:hidden;
+}
+/* granite boulders — Monsanto's signature: a village grown around giant rocks */
+.hero::before,.hero::after{
+  content:'';
+  position:absolute;
+  border-radius:48% 52% 55% 45% / 55% 48% 52% 45%;
+  background:radial-gradient(circle at 35% 30%, rgba(160,150,132,.10), rgba(90,82,70,.05) 70%);
+  pointer-events:none;
+}
+.hero::before{width:420px;height:340px;left:-140px;bottom:-90px}
+.hero::after{width:520px;height:400px;right:-180px;top:-120px}
+.hero-eyebrow{
+  font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;margin-bottom:1.4rem;
+}
+.hero h1{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900;
+  font-size:clamp(2.6rem,8vw,5.2rem);
+  line-height:.96;
+  text-transform:uppercase;
+  letter-spacing:.01em;
+  margin-bottom:1.2rem;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--gold);
+  display:block;
+  font-size:.52em;
+  letter-spacing:.08em;
+  margin-top:.5rem;
+}
+.hero-sub{
+  max-width:560px;margin:0 auto 2.4rem;
+  color:var(--body-text);font-size:1.02rem;
+}
+.hero-meta{
+  display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;
+  margin-bottom:2.6rem;
+}
+.hero-meta div{text-align:center}
+.hero-meta .m-n{
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;
+  font-size:1.5rem;color:#fff;display:block;line-height:1.1;text-transform:uppercase;
+}
+.hero-meta .m-l{
+  font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);
+}
+.btn{
+  display:inline-block;
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;
+  font-size:1rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:15px 40px;border-radius:2px;text-decoration:none;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.btn-gold{
+  background:var(--gold);color:var(--ink);
+  box-shadow:0 8px 26px rgba(232,160,48,.28);
+}
+.btn-gold:hover{background:#f2ae3c;transform:translateY(-2px);box-shadow:0 12px 30px rgba(232,160,48,.4)}
+.btn-ghost{
+  border:1px solid rgba(255,255,255,.25);color:#fff;margin-left:.8rem;
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.hero-scroll{
+  margin-top:3.4rem;font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;
+  color:rgba(168,196,216,.45);
+}
+
+/* ============ SECTION SHARED ============ */
+section{padding:4.5rem 0}
+.eyebrow{
+  font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;display:block;margin-bottom:.9rem;
+}
+h2{
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;
+  font-size:clamp(1.9rem,4.5vw,2.9rem);text-transform:uppercase;
+  line-height:1.02;margin-bottom:1.4rem;
+}
+.lead{color:var(--body-text);max-width:640px;margin-bottom:1rem}
+
+/* ============ STORY / HISTORY ============ */
+.story{border-top:1px solid rgba(255,255,255,.07)}
+.story-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;
+}
+.timeline{border-left:2px solid rgba(201,168,76,.35);padding-left:1.6rem;margin-top:.6rem}
+.t-item{position:relative;padding-bottom:1.8rem}
+.t-item:last-child{padding-bottom:0}
+.t-item::before{
+  content:'';position:absolute;left:calc(-1.6rem - 6px);top:6px;
+  width:10px;height:10px;border-radius:50%;
+  background:var(--gold);border:2px solid var(--ink);
+}
+.t-year{
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;
+  font-size:1.4rem;color:var(--gold);line-height:1;display:block;margin-bottom:.25rem;
+}
+.t-text{font-size:.9rem;color:var(--body-text)}
+
+/* ============ PHOTOS ============ */
+.photos{background:rgba(255,255,255,.025);border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+.photo-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2rem;
+}
+.photo-grid figure{
+  aspect-ratio:4/5;overflow:hidden;border-radius:3px;
+  background:linear-gradient(150deg,#2c2214,#201709);
+  border:1px solid rgba(201,168,76,.18);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.photo-grid figure:nth-child(2){margin-top:1.6rem}
+.photo-grid img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-note{
+  font-size:.72rem;color:rgba(168,196,216,.55);text-align:center;
+  padding:1rem;letter-spacing:.04em;line-height:1.5;
+}
+.photo-credit{font-size:.62rem;color:rgba(168,196,216,.45);margin-top:1rem;text-align:center;letter-spacing:.08em;text-transform:uppercase}
+
+/* ============ MAP ============ */
+.map-frame{
+  border:1px solid rgba(201,168,76,.3);border-radius:4px;overflow:hidden;
+  margin-top:2rem;box-shadow:0 18px 50px rgba(0,0,0,.4);
+}
+.map-frame iframe{display:block;width:100%;height:420px;border:0;filter:saturate(.85)}
+.map-actions{margin-top:1.2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.map-link{
+  font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold);text-decoration:none;font-weight:600;
+}
+.map-link:hover{text-decoration:underline}
+.map-detail{font-size:.8rem;color:var(--sky)}
+
+/* ============ CTA ============ */
+.cta{
+  text-align:center;
+  background:
+    radial-gradient(ellipse at 50% -20%, rgba(232,160,48,.12) 0%, transparent 60%),
+    #201709;
+  border-top:1px solid rgba(201,168,76,.2);
+}
+.cta .lead{margin-left:auto;margin-right:auto;margin-bottom:2.2rem}
+.cta-note{
+  display:block;margin-top:1.1rem;
+  font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(168,196,216,.5);
+}
+
+/* ============ FOOTER ============ */
+footer{
+  padding:2.5rem 1.5rem 3rem;text-align:center;
+  border-top:1px solid rgba(255,255,255,.06);
+  font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(168,196,216,.4);
+}
+footer a{color:var(--gold-soft);text-decoration:none}
+
+@media(max-width:720px){
+  .story-grid{grid-template-columns:1fr;gap:2rem}
+  .photo-grid{grid-template-columns:1fr 1fr}
+  .photo-grid figure:nth-child(2){margin-top:0}
+  .btn-ghost{margin-left:0;margin-top:.8rem}
+  .hero{min-height:74vh}
+  .map-frame iframe{height:320px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-eyebrow">✦ Origin 2026 · Satellite Event · Portugal</div>
+  <h1>
+    Gathering at<br>Vira-a-Corça
+    <em>At the foot of the sacred mountain</em>
+  </h1>
+  <p class="hero-sub">
+    On October 17, 2026, as one synchronized moment moves across the planet,
+    we gather where pilgrims have gathered for eight centuries — the hermitage
+    of São Pedro de Vira-a-Corça, beneath Monsanto, the <strong>Mons Sanctus</strong>.
+  </p>
+  <div class="hero-meta">
+    <div><span class="m-n">Oct 17</span><span class="m-l">2026</span></div>
+    <div><span class="m-n">Monsanto</span><span class="m-l">Idanha-a-Nova · Portugal</span></div>
+    <div><span class="m-n">Free</span><span class="m-l">Open to all</span></div>
+  </div>
+  <div>
+    <a class="btn btn-gold" href="#join">✦ Join the gathering</a>
+    <a class="btn btn-ghost" href="#place">The place</a>
+  </div>
+  <div class="hero-scroll">Scroll ↓</div>
+</header>
+
+<!-- ============ THE PLACE / HISTORY ============ -->
+<section class="story" id="place">
+  <div class="wrap">
+    <div class="story-grid">
+      <div>
+        <span class="eyebrow">The Place</span>
+        <h2>Eight centuries<br>of pilgrimage</h2>
+        <p class="lead">
+          The hermitage of São Pedro de Vira-a-Corça sits at the foot of Monsanto hill —
+          <em>Mons Sanctus</em>, the sacred mountain. Its door opens through a semicircular
+          arch crowned by a rose window; inside, a tripartite nave leads to an apse flanked
+          by narrow chapels.
+        </p>
+        <p class="lead">
+          In front of the chapel, perched on a bare granite boulder, stands a simple bell
+          tower that seems to defy gravity — a fitting sentinel for a place that has drawn
+          pilgrims since ancient times.
+        </p>
+      </div>
+      <div class="timeline">
+        <div class="t-item">
+          <span class="t-year">1200s</span>
+          <span class="t-text">The temple is built in the early 13th century at the foot of Monsanto hill.</span>
+        </div>
+        <div class="t-item">
+          <span class="t-year">1308</span>
+          <span class="t-text">King Dinis grants a Fair Charter to the annual fair held beside the hermitage.</span>
+        </div>
+        <div class="t-item">
+          <span class="t-year">1400s</span>
+          <span class="t-text">The hermitage is renovated, taking the form pilgrims still see today.</span>
+        </div>
+        <div class="t-item">
+          <span class="t-year">2026</span>
+          <span class="t-text">On October 17, the ancient pilgrimage site joins a planet-wide moment of connection.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHOTOS ============ -->
+<section class="photos">
+  <div class="wrap">
+    <span class="eyebrow">In Pictures</span>
+    <h2>The hermitage &amp; the mountain</h2>
+    <div class="photo-grid">
+      <!-- Replace the src of each image with your own photos of the chapel / Monsanto -->
+      <figure>
+        <img src="photos/chapel-front.jpg" alt="Front of the hermitage of São Pedro de Vira-a-Corça with its rose window"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-note',textContent:'Add your photo here — photos/chapel-front.jpg'}))">
+      </figure>
+      <figure>
+        <img src="photos/bell-tower.jpg" alt="The bell tower standing on a granite boulder in front of the chapel"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-note',textContent:'Add your photo here — photos/bell-tower.jpg'}))">
+      </figure>
+      <figure>
+        <img src="photos/monsanto-hill.jpg" alt="Monsanto village and hill rising above the hermitage"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-note',textContent:'Add your photo here — photos/monsanto-hill.jpg'}))">
+      </figure>
+    </div>
+    <div class="photo-credit">Drop three photos named chapel-front.jpg · bell-tower.jpg · monsanto-hill.jpg into a /photos folder — or edit the src paths above</div>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section id="map">
+  <div class="wrap">
+    <span class="eyebrow">Getting There</span>
+    <h2>Find the hermitage</h2>
+    <p class="lead">Capela de São Pedro de Vira-a-Corça · Av. 1º Cabo José Martins Silvestre, Idanha-a-Nova, Portugal</p>
+    <div class="map-frame">
+      <iframe
+        src="https://maps.google.com/maps?q=40.0352361,-7.1192643&z=16&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map — Capela de São Pedro de Vira-a-Corça, Monsanto">
+      </iframe>
+    </div>
+    <div class="map-actions">
+      <a class="map-link" href="https://maps.app.goo.gl/Sfa68C9dWg9wJVG38" target="_blank" rel="noopener">Open in Google Maps →</a>
+      <span class="map-detail">40.0352° N · 7.1193° W · at the foot of Monsanto hill</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="join">
+  <div class="wrap">
+    <span class="eyebrow">October 17, 2026</span>
+    <h2>Be part of the<br>global moment</h2>
+    <p class="lead">
+      From a circle of ten to a crowd of thousands, every gathering weaves this
+      ancient place into a single synchronized moment shared across every continent.
+      Come as you are — the mountain has been welcoming pilgrims for 800 years.
+    </p>
+    <a class="btn btn-gold" href="https://ourorigin.earth" target="_blank" rel="noopener">✦ Learn more &amp; register →</a>
+    <span class="cta-note">Free to attend · All welcome · Part of the ORIGIN worldwide map</span>
+  </div>
+</section>
+
+<footer>
+  ORIGIN 2026 · Monsanto Satellite Event ·
+  <a href="https://ourorigin.earth" target="_blank" rel="noopener">ourorigin.earth</a>
+</footer>
+
+</body>
+</html>
